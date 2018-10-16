@@ -1,0 +1,7 @@
+*.suo
+*.user
+*.cachefile
+.vs
+obj
+packages
+bin/Debug/AutoArc.pdb
