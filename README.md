@@ -14,6 +14,9 @@ When you start it, it will kill off any instances of Gw2, so be careful.
 
 Feel free to compile yourself, if you don't trust me for any reason.
 
+PS: Don't worry about Windows Smartscreen opinion about that file. You can always check on Virustotal.
+
+MD5 Hash: f189b7eef057d557dd7fbc731b07053d (23.10.2018)
 
 ------------------------------------------------------------------------
 *DISCLAIMER:*
