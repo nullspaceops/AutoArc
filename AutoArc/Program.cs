@@ -11,8 +11,6 @@ namespace AutoArc
         public const string OldSuffix = ".old";
         public const string ChecksumSuffix = ".md5sum";
 
-        //public readonly static string[] ArcURI = { "https://www.deltaconnected.com/arcdps/x64/", "https://www.deltaconnected.com/arcdps/x64/buildtemplates/", "https://www.deltaconnected.com/arcdps/x64/extras/", "http://martionlabs.com/wp-content/uploads/" };
-        //public readonly static string[] ArcNames = { "d3d9.dll", "d3d9_arcdps_buildtemplates.dll", "d3d9_arcdps_extras.dll", "d3d9_arcdps_mechanics.dll" };
         public readonly static string[] ArcURI = { "https://www.deltaconnected.com/arcdps/x64/", "http://martionlabs.com/wp-content/uploads/" };
         public readonly static string[] ArcNames = { "d3d9.dll", "d3d9_arcdps_mechanics.dll" };
 

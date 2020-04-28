@@ -16,10 +16,6 @@ Feel free to compile yourself, if you don't trust me for any reason.
 
 PS: Don't worry about Windows Smartscreen opinion about that file. You can always check on Virustotal.
 
-MD5 Hash: f189b7eef057d557dd7fbc731b07053d (23.10.2018)
-
-SHA-256: 839318eae7ebf6d947c0a132489d81ffe8a78be0c82862140c515fbef536f837
-
 ------------------------------------------------------------------------
 *DISCLAIMER:*
 
