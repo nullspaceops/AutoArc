@@ -11,12 +11,14 @@ namespace AutoArc
         public const string OldSuffix = ".old";
         public const string ChecksumSuffix = ".md5sum";
 
-        public readonly static string[] ArcURI = { "https://www.deltaconnected.com/arcdps/x64/", "https://www.deltaconnected.com/arcdps/x64/buildtemplates/", "https://www.deltaconnected.com/arcdps/x64/extras/", "http://martionlabs.com/wp-content/uploads/" };
-        public readonly static string[] ArcNames = { "d3d9.dll", "d3d9_arcdps_buildtemplates.dll", "d3d9_arcdps_extras.dll", "d3d9_arcdps_mechanics.dll" };
+        //public readonly static string[] ArcURI = { "https://www.deltaconnected.com/arcdps/x64/", "https://www.deltaconnected.com/arcdps/x64/buildtemplates/", "https://www.deltaconnected.com/arcdps/x64/extras/", "http://martionlabs.com/wp-content/uploads/" };
+        //public readonly static string[] ArcNames = { "d3d9.dll", "d3d9_arcdps_buildtemplates.dll", "d3d9_arcdps_extras.dll", "d3d9_arcdps_mechanics.dll" };
+        public readonly static string[] ArcURI = { "https://www.deltaconnected.com/arcdps/x64/", "http://martionlabs.com/wp-content/uploads/" };
+        public readonly static string[] ArcNames = { "d3d9.dll", "d3d9_arcdps_mechanics.dll" };
 
         //  Custom Path
-        //private const string LocalPath = "C:/Spiele/Guild Wars 2/bin64/";
-        public const string LocalPath = "bin64/";
+        private const string LocalPath = "C:/Spiele/Guild Wars 2/bin64/";
+        //public const string LocalPath = "bin64/";
         public readonly static string[] GameExeName = {"Gw2", "Gw2-64"};
 
 
@@ -24,7 +26,7 @@ namespace AutoArc
         {
             foreach(string Proc in GameExeName)
             {
-                KillGame(Proc);
+                KillGame(Proc);                
             }
 
             foreach(string ArcDll in ArcNames)
@@ -95,6 +97,7 @@ namespace AutoArc
         {
             // Need it to remove all files to download "d3d9_arcdps_extras.dll" properly?...
             System.IO.File.Delete(LocalPath + name);
+
             Console.WriteLine("Removing {0}...", name);
         }
 
@@ -104,9 +107,10 @@ namespace AutoArc
             {
                 process.Kill();
                 Console.WriteLine("Sleeping...");
-                System.Threading.Thread.Sleep(2000);
                 Console.WriteLine("################");
+                System.Threading.Thread.Sleep(5000);
             }
         }
+
     }
 }
